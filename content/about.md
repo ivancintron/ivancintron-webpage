@@ -4,7 +4,7 @@ author: "Ivan Cintron"
 url: "/about/"
 ---
 
-# About Ivan
+# whoami?
 I am just a chill guy....
 
 ### Why make a website?
