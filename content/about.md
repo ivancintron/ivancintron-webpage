@@ -13,7 +13,7 @@ I am not sure but I want to do something different and I feel that creating this
 I have been inspired by others to learn to create and maintain my own webspace/domain because
 it is not only empowering but something that with time passing less of us know how to do. 
 
-I want to go from a consumption only type of platform to a truly creative and free arena that is my own. 
+I want to go from a consumption focused type of platform to a truly creative and free arena that is my own. 
 
 
 [Back to the Homepage](/)
