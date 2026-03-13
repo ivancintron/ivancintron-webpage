@@ -1,6 +1,7 @@
 baseURL: "https://ivancintron.com"
 languageCode: "en-us"
 title: "Ivan Cintron"
+theme: "hugo-xmin"
 
 googleAnalytics: ""
 disqusShortname: ""
