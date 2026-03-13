@@ -2,11 +2,6 @@ baseURL: "https://ivancintron.com"
 languageCode: "en-us"
 title: "Ivan Cintron"
 
-googleAnalytics: ""
-disqusShortname: ""
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-footnotereturnlinkcontents: "↩"
-
 menu:
   main:
     - name: "Home"
