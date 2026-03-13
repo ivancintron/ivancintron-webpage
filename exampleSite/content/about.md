@@ -1,6 +1,6 @@
 ---
-title: About Me
-author: Ivan Cintron
+title: "About Me"
+author: "Ivan Cintron"
 url: "/about/"
 ---
 
