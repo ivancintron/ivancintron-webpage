@@ -4,9 +4,8 @@ title: Home
 
 # Ivan Cintron
 
-Welcome to my website. This is a minimalist, text-focused site inspired by the early web.
+Welcome to my corner of the web. This is my home on the internet where I share my projects and ideas.
 
-### About this site
-I built this using Hugo and GitHub Pages to keep things fast, private, and simple. No bloat, no tracking, just content.
+I'm keeping things simple, fast, and text-focused.
 
 [Read more about me](/about/)
