@@ -10,6 +10,9 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 2
+    - name: "Donate"
+      url: "/donate/"
+      weight: 3
 
 params:
   description: "Personal website of Ivan Cintron."
