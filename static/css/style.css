@@ -1,31 +1,39 @@
-/* 1. Global Dark Theme */
+/* ========================
+   1. Global Dark Theme
+======================== */
 body {
   background: #121212;
   color: #e0e0e0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
-/* 2. Main content & centered text */
+/* ========================
+   2. Main content & centered text
+======================== */
 main, body > article, body > section, body > div {
   max-width: 850px;
   margin: 0 auto;
   padding: 2em;
-  line-height: 1.6;
-  text-align: center; /* centers headings and paragraphs */
+  text-align: center;
 }
 main p, main h1, main h2, main h3 {
   text-align: center;
 }
 
-/* 3. Headings */
+/* ========================
+   3. Headings
+======================== */
 h1, h2, h3 {
   color: #ffffff;
   margin-top: 1.5em;
 }
 
-/* 4. Navigation */
+/* ========================
+   4. Navigation
+======================== */
 nav {
   text-align: center;
   margin-bottom: 2em;
@@ -44,13 +52,16 @@ nav a {
   padding: 8px 16px;
   border-radius: 8px;
   font-weight: 600;
+  text-decoration: none;
 }
 nav a:hover {
   background: #38bdf8;
   color: #121212;
 }
 
-/* 5. Images (responsive, centered) */
+/* ========================
+   5. Images (responsive, centered)
+======================== */
 img {
   max-width: 300px;
   width: 100%;
@@ -60,7 +71,9 @@ img {
   border-radius: 15px;
 }
 
-/* 6. Footer */
+/* ========================
+   6. Footer
+======================== */
 footer {
   text-align: center;
   margin-top: 3em;
@@ -69,8 +82,9 @@ footer {
   color: #888;
 }
 
-
-/* 7. Support table styling */
+/* ========================
+   7. Support table styling
+======================== */
 .support-table {
   width: 100%;
   border-collapse: collapse;
@@ -85,18 +99,14 @@ footer {
 .support-table th {
   color: #38bdf8;
 }
-
-/* Make QR codes square and responsive */
 .support-table img {
   max-width: 150px;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 0 !important; /* remove circular corners */
+  border-radius: 0 !important;
 }
-
-/* Code inside table cells */
 .support-table code {
   word-break: break-all;
   color: #e0e0e0;
@@ -106,13 +116,34 @@ footer {
   font-family: monospace;
 }
 
-/* 8. Mobile tweaks */
-@media (max-width: 768px) {
-  main, body > article, body > section, body > div {
+/* ========================
+   8. Sections Layout (Responsive)
+======================== */
+main, .content {
+  display: flex;
+  flex-wrap: wrap;                 /* allow sections to wrap on smaller screens */
+  justify-content: space-between;   /* space evenly on desktop */
+  gap: 20px;                        /* spacing between sections */
+  margin: 0 auto;
+  max-width: 1200px;                /* wider container for desktop */
+}
+
+/* Each section inside main/content */
+main > section, .content > section {
+  flex: 1 1 30%;      /* 30% width, grows/shrinks */
+  min-width: 250px;   /* prevents sections from being too narrow */
+  margin: 0 auto;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  main, .content {
+    flex-direction: column; /* stack sections vertically */
+    gap: 15px;
     padding: 1.5em;
   }
-  .form-container iframe {
-    height: 900px;
+  main > section, .content > section {
+    flex: 1 1 100%;       /* full width */
   }
   .support-table th,
   .support-table td {
@@ -121,9 +152,14 @@ footer {
   .support-table img {
     max-width: 120px;
   }
+  .form-container iframe {
+    height: 900px;
+  }
 }
 
-/* 9. Home page specific */
+/* ========================
+   9. Home page specific tweaks
+======================== */
 .home-content, 
 .home-content p, 
 .home-content h1, 
@@ -137,45 +173,17 @@ footer {
 }
 
 .form-container {
-  max-width: 700px;       /* limits width */
-  margin: 2em auto;       /* centers container */
-  padding: 0;             /* no extra padding */
-  border-radius: 12px;    /* optional soft corners */
-  background: transparent; /* let form background show fully */
-  box-shadow: none;       /* remove shadow */
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 0;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
 }
-
 .form-container iframe {
   width: 100%;
-  height: 817px;          /* match your embed height */
+  height: 817px;
   border: 0;
   display: block;
   border-radius: 12px;
-}
-
-/* Make sections layout responsive inside main/content */
-main, .content {
-  display: flex;
-  flex-wrap: wrap;           /* allow stacking on small screens */
-  justify-content: space-between; /* space sections evenly */
-  gap: 20px;                 /* space between sections */
-}
-
-/* Each section inside main/content */
-main > section, .content > section {
-  flex: 1 1 30%;    /* grow/shrink, basis 30% of container */
-  min-width: 250px; /* prevents sections from getting too narrow */
-  margin: 0 auto;
-}
-
-/* Mobile adjustments */
-@media screen and (max-width: 768px) {
-  main, .content {
-    flex-direction: column;  /* stack sections vertically */
-    gap: 15px;
-  }
-
-  main > section, .content > section {
-    flex: 1 1 100%;  /* each section full width */
-  }
 }
