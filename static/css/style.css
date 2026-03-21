@@ -102,3 +102,44 @@ footer {
     height: 900px;
   }
 }
+
+/* Support page table styling */
+.support-table {
+  width: 100%;
+  max-width: 700px;
+  margin: 2em auto;
+  border-collapse: separate;
+  border-spacing: 0 15px; /* adds vertical spacing between rows */
+}
+
+.support-table th,
+.support-table td {
+  padding: 12px 15px;
+  text-align: center;
+  vertical-align: middle;
+  background: #1e1e1e;  /* semi-dark row background */
+  border-radius: 10px;
+}
+
+.support-table th {
+  background: #2a2a2a; /* slightly darker header */
+  color: #38bdf8;
+}
+
+.support-table img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.support-table a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.support-table a:hover {
+  text-decoration: underline;
+}
