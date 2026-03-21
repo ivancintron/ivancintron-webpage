@@ -9,15 +9,15 @@ body {
 
 /* 2. Main content & home page text */
 main, body > article, body > section, body > div {
-  max-width: 850px;       /* prevents hugging left/right */
-  margin: 0 auto;         /* centers content horizontally */
-  padding: 2em;           /* adds spacing from edges */
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2em;
   line-height: 1.6;
+  text-align: center; /* center everything on home page */
 }
 
 /* 3. Headings centered */
 h1, h2, h3 {
-  text-align: center;
   color: #ffffff;
   margin-top: 1.5em;
 }
@@ -56,7 +56,17 @@ nav a:hover {
   color: #121212;
 }
 
-/* 6. Footer */
+/* 6. Images (responsive and centered) */
+img {
+  max-width: 300px;       /* caps image width on desktop */
+  width: 100%;            /* scales down on mobile */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+/* 7. Footer */
 footer {
   text-align: center;
   margin-top: 3em;
@@ -65,25 +75,28 @@ footer {
   color: #888;
 }
 
-/* 7. Google Form (semi-dark uniform styling) */
+/* 8. Google Form (semi-dark uniform styling) */
 .form-container {
-  background: #1e1e1e;
+  background: #1e1e1e;        /* semi-dark card */
   padding: 20px;
   border-radius: 16px;
   margin: 2em 0;
   display: flex;
   justify-content: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5); /* subtle shadow for depth */
 }
+
 .form-container iframe {
   width: 100%;
   max-width: 700px;
   height: 800px;
   border: none;
   border-radius: 12px;
-  background: #2a2a2a;   /* uniform dark color inside form container */
+  background: #2a2a2a;         /* behind the iframe to unify color */
+  box-shadow: inset 0 0 0 1000px rgba(30,30,30,0.6); /* overlays semi-dark filter inside iframe area */
 }
 
-/* 8. Tables (for stories or donations) */
+/* 9. Tables (for stories or donations) */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -98,7 +111,7 @@ th {
   color: #38bdf8;
 }
 
-/* 9. Code blocks, preformatted text */
+/* 10. Code blocks, preformatted text */
 pre, code, blockquote {
   background: #1e1e1e;
   border: 1px solid #333;
@@ -106,7 +119,7 @@ pre, code, blockquote {
   border-radius: 5px;
 }
 
-/* 10. Mobile tweaks */
+/* 11. Mobile tweaks */
 @media (max-width: 768px) {
   main, body > article, body > section, body > div {
     padding: 1.5em;
