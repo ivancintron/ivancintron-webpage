@@ -10,7 +10,7 @@ draft: false
     <tr>
       <th>Method</th>
       <th>QR Code (Click to Enlarge)</th>
-      <th>QR Code or Address</th>
+      <th>Link or Address</th>
     </tr>
   </thead>
   <tbody>
