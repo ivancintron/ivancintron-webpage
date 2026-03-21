@@ -1,6 +1,7 @@
 baseURL: "https://ivancintron.com"
 languageCode: "en-us"
-title: "Ivan Cintron"
+title: "Ivan Cintrón"
+theme: "hugo-xmin"
 
 menu:
   main:
@@ -21,15 +22,12 @@ menu:
       weight: 5
 
 params:
-  description: "Personal website of Ivan Cintron."
-  footer: "&copy; Ivan Cintron {Year}"
-  body_classes: "bg-near-black white"
-  background_color_class: "bg-black"
+  description: "Personal website of Ivan Cintrón."
+  footer: "&copy; Ivan Cintrón {Year}"
+  # XMin uses this specifically to load your styles
   custom_css: ["css/custom.css"]
 
 markup:
-  highlight:
-    codeFences: false
   goldmark:
     renderer:
       unsafe: true
