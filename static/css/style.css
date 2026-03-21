@@ -117,43 +117,44 @@ footer {
 }
 
 /* ========================
-   8. Sections Layout (Responsive)
+   8. Sections Layout (No Stack on Mobile)
 ======================== */
 main, .content {
   display: flex;
-  flex-wrap: wrap;                 /* allow sections to wrap on smaller screens */
-  justify-content: space-between;   /* space evenly on desktop */
-  gap: 20px;                        /* spacing between sections */
+  flex-wrap: nowrap;             /* never stack */
+  justify-content: center;       /* center all sections horizontally */
+  gap: 20px;                     /* spacing between sections */
   margin: 0 auto;
-  max-width: 1200px;                /* wider container for desktop */
+  max-width: 1200px;             /* container max width */
 }
 
 /* Each section inside main/content */
 main > section, .content > section {
-  flex: 1 1 30%;      /* 30% width, grows/shrinks */
-  min-width: 250px;   /* prevents sections from being too narrow */
+  display: flex;
+  flex-direction: column;        /* stack content vertically inside section */
+  align-items: center;           /* center headings/images */
+  justify-content: flex-start;
+  text-align: center;            /* headings/paragraphs centered */
+  transform: none;               /* remove accidental mirroring */
+  direction: ltr;                /* enforce LTR text */
+  flex: 1 1 30%;                 /* shrink proportionally */
+  min-width: 200px;              /* prevent too small */
   margin: 0 auto;
 }
 
-/* Mobile adjustments */
-@media screen and (max-width: 768px) {
-  main, .content {
-    flex-direction: column; /* stack sections vertically */
-    gap: 15px;
-    padding: 1.5em;
-  }
+/* Optional scaling for very small screens */
+@media screen and (max-width: 480px) {
   main > section, .content > section {
-    flex: 1 1 100%;       /* full width */
+    flex: 1 1 28%;               /* shrink slightly */
   }
-  .support-table th,
-  .support-table td {
-    font-size: 0.9em;
+  main > section h1, .content > section h1 {
+    font-size: 1.2em;            /* scale down headings */
   }
-  .support-table img {
-    max-width: 120px;
+  main > section p, .content > section p {
+    font-size: 0.95em;           /* scale down paragraphs */
   }
-  .form-container iframe {
-    height: 900px;
+  img {
+    max-width: 90%;               /* shrink images proportionally */
   }
 }
 
@@ -172,33 +173,42 @@ main > section, .content > section {
   display: block;
 }
 
+/* ========================
+   10. Who Am I section fix
+======================== */
+.whoami-section {
+  display: flex;
+  flex-direction: column;  /* stack heading then subtext */
+  align-items: center;     /* center horizontally */
+  text-align: center;
+  gap: 0.5em;              /* spacing between heading & subtext */
+}
+.whoami-section h1 {
+  order: 0;                /* heading first */
+  margin: 0.2em 0;
+}
+.whoami-section p {
+  order: 1;                /* subtext below heading */
+  margin: 0;
+}
+
+/* ========================
+   11. Google Form container fix
+======================== */
 .form-container {
-  max-width: 700px;
-  margin: 2em auto;
+  width: 100%;             /* full width of parent */
+  max-width: 900px;        /* wider on desktop */
+  margin: 2em auto;        /* center horizontally */
   padding: 0;
   border-radius: 12px;
   background: transparent;
   box-shadow: none;
 }
 .form-container iframe {
-  width: 100%;
-  height: 817px;
+  width: 100%;             /* fill container width */
+  min-height: 817px;       /* maintain minimum height */
+  height: auto;            /* allow flexible height */
   border: 0;
   display: block;
   border-radius: 12px;
-}
-
-/* Reset and center all content inside main/content sections */
-main > section, 
-.content > section {
-  display: flex;
-  flex-direction: column;  /* stack content vertically */
-  align-items: center;     /* horizontally center all content */
-  justify-content: flex-start; /* keep vertical flow natural */
-  text-align: center;      /* ensures headings and paragraphs are centered */
-  transform: none;         /* remove accidental mirroring */
-  direction: ltr;          /* enforce left-to-right text */
-  flex: 1 1 30%;
-  min-width: 250px;
-  margin: 0 auto;
 }
