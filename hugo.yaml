@@ -10,16 +10,19 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 2
+    - name: "Stories"  # Add this block
+      url: "/stories/"
+      weight: 3
     - name: "Donate"
       url: "/donate/"
-      weight: 3
+      weight: 4
 
 params:
   description: "Personal website of Ivan Cintron."
   footer: "&copy; Ivan Cintron {Year}"
-  # Force dark background and white text for the whole site
   body_classes: "bg-near-black white"
   background_color_class: "bg-black"
+  custom_css: ["css/custom.css"] # Keep this for your dark mode
 
 markup:
   highlight:
