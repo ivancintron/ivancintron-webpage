@@ -11,11 +11,11 @@ html, body {
 
 /* 2. Main Content Area */
 main {
-  max-width: 850px;        /* narrower for better readability */
+  max-width: 850px;
   margin: 0 auto;
-  padding: 3em 2em;        /* horizontal padding for home page and all pages */
+  padding: 3em 2em;
   line-height: 1.8;
-  text-align: left;        /* keeps paragraphs left-aligned */
+  text-align: left; /* paragraphs stay readable */
 }
 
 /* 3. Navigation */
@@ -64,10 +64,10 @@ a:hover {
 h1, h2, h3 {
   color: #ffffff;
   margin-top: 1.5em;
-  text-align: center; 
+  text-align: center;
 }
 
-/* 6. Paragraphs & text blocks */
+/* 6. Paragraphs */
 p {
   margin-bottom: 1.5em;
 }
@@ -81,7 +81,6 @@ img {
   margin: 20px auto;
 }
 
-/* Limit donation / QR images */
 main img, article img, .donate img {
   max-width: 250px !important;
 }
@@ -121,7 +120,7 @@ th, td {
   display: flex;
   justify-content: center;
   margin: 40px 0;
-  background: #1b1b1b;          /* semi-dark background instead of pure white */
+  background: #1e1e1e; /* semi-dark card */
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -133,16 +132,23 @@ th, td {
   height: 800px;
   border: none;
   border-radius: 12px;
-  background: #2a2a2a; /* iframe now semi-dark to blend better */
+  background: #2a2a2a; /* semi-dark to match site */
 }
 
 /* 11. Mobile tweaks */
 @media (max-width: 768px) {
   main {
-    padding: 2em 1.5em; /* smaller padding on mobile */
+    padding: 2em 1.5em;
   }
 
   .form-container iframe {
     height: 900px;
   }
+}
+
+/* 12. Homepage extra wrappers (fix hugging left) */
+body > div, body > section, body > article {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2em;
 }
