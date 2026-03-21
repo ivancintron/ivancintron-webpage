@@ -11,30 +11,55 @@ body {
 }
 
 /* ========================
-   2. Container for main content
+   2. Main content container
 ======================== */
 main, body > article, body > section, body > div {
-  max-width: 800px;           /* constrain width for readability */
-  margin: 0 auto;             /* center container horizontally */
+  max-width: 800px;          /* constrain width */
+  margin: 0 auto;
   padding: 2em 1em;
 }
 
 /* ========================
-   3. Headings and paragraphs (left-aligned)
+   3. Headings and paragraphs
 ======================== */
-h1, h2, h3, p, li, blockquote, pre {
-  text-align: left;           /* left-aligned like xmin */
-  margin-top: 1.2em;
+h1, h2, h3 {
+  text-align: left;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.3;
+}
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.2em; }
+
+p, li {
+  text-align: left;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  line-height: 1.6;
+}
+
+ul, ol {
+  padding-left: 2em;        /* proper indentation for lists */
+  margin-top: 0.8em;
   margin-bottom: 0.8em;
 }
-h1 {
-  font-size: 2em;
+
+blockquote {
+  padding-left: 1em;
+  border-left: 3px solid #38bdf8;
+  margin: 1em 0;
+  color: #ccc;
+  font-style: italic;
 }
-h2 {
-  font-size: 1.5em;
-}
-h3 {
-  font-size: 1.2em;
+
+pre, code {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: monospace;
+  overflow-x: auto;
 }
 
 /* ========================
@@ -88,7 +113,7 @@ footer {
 }
 
 /* ========================
-   7. Support table styling
+   7. Support tables
 ======================== */
 .support-table {
   width: 100%;
@@ -99,7 +124,7 @@ footer {
 .support-table td {
   padding: 12px;
   border-bottom: 1px solid #333;
-  text-align: left;           /* left-align table content */
+  text-align: left;
 }
 .support-table th {
   color: #38bdf8;
@@ -112,24 +137,16 @@ footer {
   margin: 0;
   border-radius: 0 !important;
 }
-.support-table code {
-  word-break: break-all;
-  color: #e0e0e0;
-  background: #1e1e1e;
-  padding: 4px 6px;
-  border-radius: 4px;
-  font-family: monospace;
-}
 
 /* ========================
-   8. Who Am I section fix
+   8. Who Am I section
 ======================== */
 .whoami-section {
   display: flex;
-  flex-direction: column;  /* stack heading then subtext */
-  align-items: flex-start; /* left-aligned inside container */
+  flex-direction: column;
+  align-items: flex-start;   /* left-aligned */
   text-align: left;
-  gap: 0.5em;              /* spacing between heading & subtext */
+  gap: 0.5em;
 }
 .whoami-section h1 {
   margin: 0.2em 0;
@@ -178,16 +195,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  h1 {
-    font-size: 1.8em;
-  }
-  h2 {
-    font-size: 1.3em;
-  }
-  h3 {
-    font-size: 1.1em;
-  }
-  img {
-    max-width: 100%;
-  }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+  p, li { font-size: 0.95em; }
+  img { max-width: 100%; }
 }
