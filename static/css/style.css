@@ -1,51 +1,72 @@
+/* Global Dark Theme */
 body {
   max-width: 800px;
   margin: auto;
   padding: 1em;
   line-height: 1.5;
+  background-color: #121212 !important; /* Deep black/gray background */
+  color: #e0e0e0 !important;           /* Soft white text */
 }
 
-/* header and footer areas */
+/* Header and navigation menu */
 .menu { padding: 0; }
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
-  background: #eee;
+  background: #333 !important;         /* Darker buttons */
+  color: #38bdf8 !important;           /* Bright blue links */
   padding: 5px;
   border-radius: 5px;
 }
 .menu, .article-meta, footer { text-align: center; }
-.title { font-size: 1.1em; }
-footer a { text-decoration: none; }
+.title { font-size: 1.1em; color: #ffffff; }
+footer a { text-decoration: none; color: #38bdf8; }
+
 hr {
   border-style: dashed;
-  color: #ddd;
+  color: #444;                         /* Darker divider line */
 }
 
-/* code */
+/* Code blocks and inline code */
 pre {
-  border: 1px solid #ddd;
-  box-shadow: 5px 5px 5px #eee;
+  border: 1px solid #444;
+  background: #1e1e1e !important;      /* Dark code background */
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
   padding: 1em;
   overflow-x: auto;
 }
-code { background: #f9f9f9; }
-pre code { background: none; }
+code { 
+  background: #2d2d2d !important;      /* Dark inline code */
+  color: #f8f8f2 !important;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+pre code { background: none !important; }
 
-/* misc elements */
-img, iframe, video { max-width: 100%; }
+/* Misc elements */
+img, iframe, video { 
+  max-width: 100%; 
+  border-radius: 8px; 
+}
 main { hyphens: auto; }
 blockquote {
-  background: #f9f9f9;
-  border-left: 5px solid #ccc;
+  background: #1e1e1e !important;
+  border-left: 5px solid #38bdf8;      /* Blue accent for quotes */
   padding: 3px 1em 3px;
+  color: #bbb;
 }
 
+/* Tables (Important for your Donate page) */
 table {
   margin: auto;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  width: 100%;
 }
-table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
-thead, tfoot, tr:nth-child(even) { background: #eee; }
+th, td { 
+  padding: 10px; 
+  border-bottom: 1px solid #333; 
+}
+thead, tfoot, tr:nth-child(even) { 
+  background: #1a1a1a !important;      /* Subtle stripes for rows */
+}
