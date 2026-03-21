@@ -152,3 +152,30 @@ footer {
   display: block;
   border-radius: 12px;
 }
+
+/* Make sections layout responsive inside main/content */
+main, .content {
+  display: flex;
+  flex-wrap: wrap;           /* allow stacking on small screens */
+  justify-content: space-between; /* space sections evenly */
+  gap: 20px;                 /* space between sections */
+}
+
+/* Each section inside main/content */
+main > section, .content > section {
+  flex: 1 1 30%;    /* grow/shrink, basis 30% of container */
+  min-width: 250px; /* prevents sections from getting too narrow */
+  margin: 0 auto;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  main, .content {
+    flex-direction: column;  /* stack sections vertically */
+    gap: 15px;
+  }
+
+  main > section, .content > section {
+    flex: 1 1 100%;  /* each section full width */
+  }
+}
