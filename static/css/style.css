@@ -9,16 +9,16 @@ body {
 
 /* 2. Main content & home page text */
 main, body > article, body > section, body > div {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 2em;
+  max-width: 850px;       /* prevents hugging left/right */
+  margin: 0 auto;         /* centers content horizontally */
+  padding: 2em;           /* adds spacing from edges */
   line-height: 1.6;
 }
 
 /* 3. Headings centered */
 h1, h2, h3 {
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   margin-top: 1.5em;
 }
 
@@ -56,17 +56,7 @@ nav a:hover {
   color: #121212;
 }
 
-/* 6. Images (all images responsive, limited to 300px) */
-img {
-  max-width: 300px;    /* limits image size on desktop */
-  width: 100%;         /* scales down on small screens */
-  height: auto;
-  display: block;
-  margin: 20px auto;   /* centers image */
-  border-radius: 15px;
-}
-
-/* 7. Footer */
+/* 6. Footer */
 footer {
   text-align: center;
   margin-top: 3em;
@@ -75,7 +65,7 @@ footer {
   color: #888;
 }
 
-/* 8. Google Form */
+/* 7. Google Form (semi-dark uniform styling) */
 .form-container {
   background: #1e1e1e;
   padding: 20px;
@@ -90,56 +80,38 @@ footer {
   height: 800px;
   border: none;
   border-radius: 12px;
-  background: #2a2a2a;
+  background: #2a2a2a;   /* uniform dark color inside form container */
 }
 
-/* 9. Mobile tweaks */
+/* 8. Tables (for stories or donations) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+th {
+  color: #38bdf8;
+}
+
+/* 9. Code blocks, preformatted text */
+pre, code, blockquote {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 10. Mobile tweaks */
 @media (max-width: 768px) {
   main, body > article, body > section, body > div {
-    padding: 2em 1.5em;
+    padding: 1.5em;
   }
   .form-container iframe {
     height: 900px;
   }
-}
-
-/* Support page table styling */
-.support-table {
-  width: 100%;
-  max-width: 700px;
-  margin: 2em auto;
-  border-collapse: separate;
-  border-spacing: 0 15px; /* adds vertical spacing between rows */
-}
-
-.support-table th,
-.support-table td {
-  padding: 12px 15px;
-  text-align: center;
-  vertical-align: middle;
-  background: #1e1e1e;  /* semi-dark row background */
-  border-radius: 10px;
-}
-
-.support-table th {
-  background: #2a2a2a; /* slightly darker header */
-  color: #38bdf8;
-}
-
-.support-table img {
-  max-width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px;
-}
-
-.support-table a {
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.support-table a:hover {
-  text-decoration: underline;
 }
