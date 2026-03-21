@@ -1,28 +1,28 @@
-name: Deploy Hugo site to Pages
-
+name: Deploy Hugo
 on:
   push:
-    branches: ["master"] # Ensure this matches your branch name (master or main)
+    branches: [master] # Change to main if that's your branch
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write  # This fixes the Code 128 error
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: recursive # Properly pulls your theme
+          fetch-depth: 0
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
+
       - name: Build
         run: hugo --minify
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
