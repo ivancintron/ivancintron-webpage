@@ -11,10 +11,11 @@ html, body {
 
 /* 2. Main Content Area */
 main {
-  max-width: 900px;        /* narrower for better readability */
+  max-width: 850px;        /* narrower for better readability */
   margin: 0 auto;
-  padding: 3em 2em;        /* add horizontal padding */
+  padding: 3em 2em;        /* horizontal padding for home page and all pages */
   line-height: 1.8;
+  text-align: left;        /* keeps paragraphs left-aligned */
 }
 
 /* 3. Navigation */
@@ -69,7 +70,6 @@ h1, h2, h3 {
 /* 6. Paragraphs & text blocks */
 p {
   margin-bottom: 1.5em;
-  text-align: left; /* text is left-aligned for readability */
 }
 
 /* 7. Images */
@@ -116,12 +116,12 @@ th, td {
   text-align: left;
 }
 
-/* 10. Google Form Container (dark card style) */
+/* 10. Google Form Container (semi-dark card) */
 .form-container {
   display: flex;
   justify-content: center;
   margin: 40px 0;
-  background: #1e1e1e;          /* dark card */
+  background: #1b1b1b;          /* semi-dark background instead of pure white */
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -133,13 +133,13 @@ th, td {
   height: 800px;
   border: none;
   border-radius: 12px;
-  background: #ffffff; /* Google Forms stays light inside card */
+  background: #2a2a2a; /* iframe now semi-dark to blend better */
 }
 
-/* Mobile tweaks */
+/* 11. Mobile tweaks */
 @media (max-width: 768px) {
   main {
-    padding: 2em 1em; /* smaller padding on mobile */
+    padding: 2em 1.5em; /* smaller padding on mobile */
   }
 
   .form-container iframe {
