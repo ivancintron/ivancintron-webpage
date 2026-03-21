@@ -81,7 +81,8 @@ p {
 
 /* Home page image - smaller size */
 .home-image {
-  width: 300px;       /* original size */
+  width: 200px;       /* smaller width */
+  max-width: 60%;     /* responsive on small screens */
   height: auto;
   border-radius: 15px;
   display: block;
