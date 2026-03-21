@@ -1,5 +1,5 @@
 ---
-title: "Weekly Story"
+title: "Monthly Story"
 ---
 
 ### 🕒 Next Update: TBD
