@@ -11,10 +11,10 @@ html, body {
 
 /* 2. Main Content Area */
 main {
-  max-width: 1100px;
+  max-width: 900px;        /* narrower for better readability */
   margin: 0 auto;
-  padding: 2em;
-  line-height: 1.6;
+  padding: 3em 2em;        /* add horizontal padding */
+  line-height: 1.8;
 }
 
 /* 3. Navigation */
@@ -63,10 +63,16 @@ a:hover {
 h1, h2, h3 {
   color: #ffffff;
   margin-top: 1.5em;
-  text-align: center; /* <-- this centers the text */
+  text-align: center; 
 }
 
-/* 6. Images */
+/* 6. Paragraphs & text blocks */
+p {
+  margin-bottom: 1.5em;
+  text-align: left; /* text is left-aligned for readability */
+}
+
+/* 7. Images */
 img {
   max-width: 100%;
   height: auto;
@@ -80,7 +86,7 @@ main img, article img, .donate img {
   max-width: 250px !important;
 }
 
-/* 7. Footer */
+/* 8. Footer */
 footer {
   margin-top: 50px;
   padding: 20px 0;
@@ -90,7 +96,7 @@ footer {
   color: #888;
 }
 
-/* 8. Code + Tables */
+/* 9. Code + Tables */
 pre, code, blockquote {
   background: #1e1e1e !important;
   border: 1px solid #333;
@@ -110,24 +116,32 @@ th, td {
   text-align: left;
 }
 
-/* 9. Google Form Container */
+/* 10. Google Form Container (dark card style) */
 .form-container {
   display: flex;
   justify-content: center;
   margin: 40px 0;
+  background: #1e1e1e;          /* dark card */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .form-container iframe {
   width: 100%;
-  max-width: 700px;   /* keeps form nicely centered */
-  height: 800px;      /* adjust for your form content */
+  max-width: 700px;
+  height: 800px;
   border: none;
   border-radius: 12px;
-  background: #ffffff; /* Google Forms stays light */
+  background: #ffffff; /* Google Forms stays light inside card */
 }
 
 /* Mobile tweaks */
 @media (max-width: 768px) {
+  main {
+    padding: 2em 1em; /* smaller padding on mobile */
+  }
+
   .form-container iframe {
     height: 900px;
   }
