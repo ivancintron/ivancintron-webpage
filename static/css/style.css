@@ -1,38 +1,95 @@
-/* XMin Style Dark Theme */
+/* 1. Global Dark Theme - Fills Entire Screen */
 html, body {
-  background-color: #121212 !important;
-  color: #e0e0e0 !important;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; /* Classic XMin font */
-  line-height: 1.5;
-  margin: 0 auto;
-  padding: 1em;
-  max-width: 800px; /* XMin is traditionally narrower */
+  background-color: #121212 !important; /* Deep black/gray */
+  color: #e0e0e0 !important;           /* Soft white text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
 }
 
-/* Minimalist Nav (XMin style) */
-nav { border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 20px; }
-nav ul { padding: 0; list-style: none; text-align: center; }
-nav li { display: inline; margin: 0 10px; }
-nav a { color: #38bdf8; text-decoration: none; font-weight: bold; }
+/* 2. Main Content Area */
+body {
+  max-width: 1100px; /* Standard wide layout */
+  margin: 0 auto;
+  padding: 2em;
+  line-height: 1.6;
+}
 
-/* Uniform Image & QR Sizes */
+/* 3. Navigation Buttons (Centered and Uniform) */
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 5px 15px;
+}
+
+nav a {
+  background: #2a2a2a !important;
+  color: #38bdf8 !important; /* Bright blue links */
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #38bdf8 !important;
+  color: #121212 !important;
+}
+
+/* 4. Images & QR Codes */
 img {
   max-width: 100%;
-  border-radius: 5px;
-  display: block;
-  margin: 1em auto;
-}
-
-/* Force QR Codes on Donate page to stay small */
-main img, article img {
-  max-width: 200px !important;
   height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 20px auto;
 }
 
+/* Specifically keeps QR codes/Donation images from getting too big */
+main img, article img, .donate img {
+  max-width: 250px !important; 
+}
+
+/* 5. Footer Styling */
 footer {
-  border-top: 1px solid #444;
   margin-top: 50px;
   padding: 20px 0;
   text-align: center;
+  border-top: 1px solid #333;
   font-size: 0.9em;
+  color: #888;
+}
+
+/* 6. Code & Tables */
+pre, code, blockquote {
+  background: #1e1e1e !important;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #333;
+  text-align: left;
 }
