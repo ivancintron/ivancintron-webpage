@@ -9,7 +9,7 @@ html, body {
   min-height: 100vh;
 }
 
-/* 2. Main Content Area (xmin uses <main>) */
+/* 2. Main Content Area */
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -107,4 +107,27 @@ th, td {
   padding: 12px;
   border-bottom: 1px solid #333;
   text-align: left;
+}
+
+/* 9. Google Form Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.form-container iframe {
+  width: 100%;
+  max-width: 700px;   /* keeps form nicely centered */
+  height: 800px;      /* adjust for your form content */
+  border: none;
+  border-radius: 12px;
+  background: #ffffff; /* Google Forms stays light */
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .form-container iframe {
+    height: 900px;
+  }
 }
