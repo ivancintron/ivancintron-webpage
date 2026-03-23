@@ -24,7 +24,7 @@ He crashes into the back of the dump truck....😏
 
 Salivating, almost foaming, I thought he might start seizing over the excitement, but Fido kept composure.  
 
-He's digging through trash like an old geezer with a metal detector, and all the while the smell is more intense. He breathes deep and the scent engulfs him. The fire, the flame—he has reached his glory. Tail wagging in front of his face: the **ass of another dog**.  
+He's digging through trash like an old geezer with a metal detector, and all the while the smell is more intense. He breathes deep and the scent engulfs him. The fire, the flame, he has reached his glory. Tail wagging in front of his face: the **ass of another dog**.  
 
 The other dog says:  
 > "Hey, what’s the big idea bro?!"  
