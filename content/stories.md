@@ -7,7 +7,7 @@ title: "Monthly Story"
 ---
 
 **This Month's Story:**
-                            JIMBO'S BIG ADVBNTURE 
+                            JIMBO'S BIG ADVENTURE 
                             
 There once was a dog named jimbo and he went round the way downtown in his pursuit of food.
 This was only the beginning for jimbo because once he made his way through the traffic and 
