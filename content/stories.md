@@ -21,6 +21,7 @@ The garbage truck was headed half a mile in the opposite direction of where Jimb
 Jimbo is second cousins with Krypto the Superdog, but he smokes a lot of weed and eats edibles, so he forgets that he’s got cool powers. Anyways, he remembers… and now he’s flying at **Mach speed**, like the [X-43A Scramjet](https://en.wikipedia.org/wiki/NASA_X-43) which Jimbo really likes for some reason—even though he has no concept of air travel.  
 
 He crashes into the back of the dump truck....😏
+
 Salivating, almost foaming, I thought he might start seizing over the excitement, but no—Fido kept composure.  
 
 He's digging through trash like an old geezer with a metal detector, and all the while the smell is more intense. He breathes deep and the scent engulfs him. The fire, the flame—he has reached his glory. Tail wagging in front of his face: the **ass of another dog**.  
