@@ -218,3 +218,17 @@ footer {
   p, li { font-size: 0.95em; }
   img { max-width: 100%; }
 }
+
+/* ========================
+   Links (readable sky blue)
+======================== */
+a {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightskyblue;
+  text-decoration: underline;
+}
+
