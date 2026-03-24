@@ -21,8 +21,8 @@ menu:
       weight: 5
 
 params:
-  description: "Personal website of Ivan Cintrón."
-  footer: "&copy; Ivan Cintrón {Year}"
+  description: "Personal website of Ivan Cintron."
+  footer: "&copy; Ivan Cintron {Year}"
 
 markup:
   goldmark:
