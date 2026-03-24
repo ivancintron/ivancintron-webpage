@@ -12,8 +12,7 @@ title: "Monthly Story"
 There once was a dog named Jimbo, and he went all around downtown in his pursuit of food.  
 This was only the beginning, because once he made his way through the traffic and mucus on the sidewalks, he recognized a familiar smell.  
 
-{{/*
-*"BARK???!!!!"* yelped Jimbo. His ears perked up like antennae, he could smell with his ears the sound of food. If this dog were a real dog and not an AI robot dog from Temu or Boston Dynamics, he would know this smell… and he did! This was no ScoobyDoo mystery.
+{{/* *"BARK???!!!!"* yelped Jimbo. His ears perked up like antennae, he could smell with his ears the sound of food. If this dog were a real dog and not an AI robot dog from Temu or Boston Dynamics, he would know this smell… and he did! This was no ScoobyDoo mystery.
 
 The garbage truck was headed half a mile in the opposite direction of where Jimbo was, and now at full sprint print marks in the ground and on concrete, this dog was gonna have his day. He was skedaddling, hightailing, and the rest, as one does…?!?!?!?!?!?
 
@@ -38,8 +37,8 @@ The other dog says:
 
 And then they just kind of jump off the dump truck and part ways.  
 
-**The End!**
-*/}}
+**The End!**  */}}
+
 ---
 
 *Catch these stories before they're gone! I rotate the content every month.*
