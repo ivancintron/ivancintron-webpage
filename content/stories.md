@@ -38,7 +38,6 @@ The other dog says:
 And then they just kind of jump off the dump truck and part ways.  
 
 **The End!** 
--->
 ---
 
 *Catch these stories before they're gone! I rotate the content every month.*
