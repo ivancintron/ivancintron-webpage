@@ -14,13 +14,24 @@ body {
    2. Main content container
 ======================== */
 main, body > article, body > section, body > div {
-  max-width: 800px;          /* constrain width */
+  max-width: 800px;
   margin: 0 auto;
   padding: 2em 1em;
 }
 
 /* ========================
-   3. Headings and paragraphs
+   3. Homepage (NEW)
+======================== */
+.home-content {
+  text-align: center;
+}
+
+.home-content h1 {
+  margin-bottom: 0.3em;
+}
+
+/* ========================
+   4. Headings and text
 ======================== */
 h1, h2, h3 {
   text-align: left;
@@ -28,21 +39,19 @@ h1, h2, h3 {
   margin-bottom: 0.6em;
   line-height: 1.3;
 }
+
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.2em; }
 
 p, li {
   text-align: left;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-  line-height: 1.6;
+  margin: 0.8em 0;
 }
 
 ul, ol {
-  padding-left: 2em;        /* proper indentation for lists */
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  padding-left: 2em;
+  margin: 0.8em 0;
 }
 
 blockquote {
@@ -63,7 +72,7 @@ pre, code {
 }
 
 /* ========================
-   4. Navigation (centered)
+   5. Navigation
 ======================== */
 nav {
   text-align: center;
@@ -93,7 +102,6 @@ nav a {
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
-  text-align: center;
 }
 
 nav a:hover {
@@ -101,14 +109,8 @@ nav a:hover {
   color: #121212;
 }
 
-@media screen and (max-width: 768px) {
-  nav li {
-    flex: 0 0 25%; /* 4 per row on mobile */
-  }
-}
-
 /* ========================
-   5. Images (responsive, left-aligned)
+   6. Images
 ======================== */
 img {
   max-width: 100%;
@@ -118,8 +120,36 @@ img {
   border-radius: 12px;
 }
 
+/* Hero Image (homepage circle) */
+.hero-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+  display: block;
+  margin: 1.5em auto;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
 /* ========================
-   6. Footer
+   7. Divider
+======================== */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #38bdf8, transparent);
+  margin: 3em 0;
+  opacity: 0.8;
+}
+
+/* ========================
+   8. Footer
 ======================== */
 footer {
   text-align: center;
@@ -130,97 +160,60 @@ footer {
 }
 
 /* ========================
-   7. Support tables
+   9. Tables
 ======================== */
 .support-table {
   width: 100%;
   border-collapse: collapse;
   margin: 2em 0;
 }
+
 .support-table th,
 .support-table td {
   padding: 12px;
   border-bottom: 1px solid #333;
   text-align: left;
 }
+
 .support-table th {
   color: #38bdf8;
 }
+
 .support-table img {
   max-width: 150px;
-  width: 100%;
-  height: auto;
-  display: block;
   margin: 0;
   border-radius: 0 !important;
 }
 
 /* ========================
-   8. Who Am I section
+   10. Who Am I
 ======================== */
 .whoami-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;   /* left-aligned */
+  align-items: flex-start;
   text-align: left;
   gap: 0.5em;
 }
-.whoami-section h1 {
-  margin: 0.2em 0;
-}
-.whoami-section p {
-  margin: 0;
-}
 
 /* ========================
-   9. Google Form container
+   11. Form
 ======================== */
 .form-container {
   width: 100%;
   max-width: 900px;
   margin: 2em 0;
-  border-radius: 12px;
-  background: transparent;
-  box-shadow: none;
 }
+
 .form-container iframe {
   width: 100%;
   min-height: 817px;
-  height: auto;
   border: 0;
-  display: block;
   border-radius: 12px;
 }
 
 /* ========================
-   10. Responsive tweaks
-======================== */
-@media screen and (max-width: 768px) {
-  main, body > article, body > section, body > div {
-    padding: 1.5em 1em;
-  }
-  .support-table th,
-  .support-table td {
-    font-size: 0.9em;
-  }
-  .support-table img {
-    max-width: 120px;
-  }
-  .form-container iframe {
-    height: 900px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  h1 { font-size: 1.8em; }
-  h2 { font-size: 1.3em; }
-  h3 { font-size: 1.1em; }
-  p, li { font-size: 0.95em; }
-  img { max-width: 100%; }
-}
-
-/* ========================
-   Links (readable sky blue)
+   12. Links
 ======================== */
 a {
   color: deepskyblue;
@@ -233,25 +226,34 @@ a:hover {
 }
 
 /* ========================
-   Story Divider
+   13. Responsive
 ======================== */
-hr {
-  border: none;
-  height: 2px;
-  background: linear-gradient(to right, transparent, #38bdf8, transparent);
-  margin: 3em 0;
-  opacity: 0.8;
+@media screen and (max-width: 768px) {
+  main, body > article, body > section, body > div {
+    padding: 1.5em 1em;
+  }
+
+  nav li {
+    flex: 0 0 25%;
+  }
+
+  .support-table th,
+  .support-table td {
+    font-size: 0.9em;
+  }
+
+  .support-table img {
+    max-width: 120px;
+  }
+
+  .form-container iframe {
+    height: 900px;
+  }
 }
 
-/* ========================
-   Homepage Hero Image
-======================== */
-.hero-img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #38bdf8;
-  display: block;
-  margin: 1.5em auto;
+@media screen and (max-width: 480px) {
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+  p, li { font-size: 0.95em; }
 }
