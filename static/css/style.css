@@ -232,3 +232,13 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ========================
+   Story Divider
+======================== */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #38bdf8, transparent);
+  margin: 3em 0;
+  opacity: 0.8;
+}
