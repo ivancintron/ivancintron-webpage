@@ -257,3 +257,14 @@ a:hover {
   h3 { font-size: 1.1em; }
   p, li { font-size: 0.95em; }
 }
+
+/* About page hero image - similar to homepage hero */
+.about-hero {
+  width: 180px;          /* slightly smaller than homepage */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;    /* circular border */
+  border: 3px solid #38bdf8;
+  display: block;
+  margin: 1.5em auto;    /* center */
+}
