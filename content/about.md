@@ -15,6 +15,6 @@ I am just a chill guy....
 
 ### Why this website?
 I wanted to learn more about personal computers and how they work and also have a place to host any creative ideas and share things
-that I find interesting. Im using this a learning tool as well as a place to express myself online!
+that I find interesting. I'm using this as a learning tool as well as a place to express myself online!
 
 </div>
