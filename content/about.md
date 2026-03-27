@@ -14,6 +14,6 @@ I wanted to learn more about personal computers and how they work and also have 
 that I find interesting. Im using this a learning tool as well as a place to express myself online!
 
 <!-- Troll face image -->
-<img src="/pictures/mypics/trollface.png" alt="Troll Face" class="hero-img about-hero">
+<img src="/images/trollface.png" alt="Troll Face" class="hero-img about-hero">
 
 </div>
