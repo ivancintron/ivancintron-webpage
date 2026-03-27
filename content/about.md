@@ -6,7 +6,7 @@ url: "/about/"
 
 <div class="about-content">
 
-# Ivan Cintron
+# whoami?
 
 <!-- Troll face image -->
 <img src="/images/trollface.png" alt="Troll Face" class="about-hero">
