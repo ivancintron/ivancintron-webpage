@@ -9,11 +9,11 @@ url: "/about/"
 # whoami?
 I am just a chill guy....
 
-### Why make a website?
-I am not sure but I wanted a space to host my stories, resources, and random chaotic fun stuff!
+### Why this website?
+I wanted to learn more about personal computers and how they work and also have a place to host any creative ideas and share things
+that I find interesting. Im using this a learning tool as well as a place to express myself online!
 
 <!-- Troll face image -->
-<img src="/images/trollface.png" alt="Troll Face" class="hero-img about-hero">
-
+<img src="/pictures/mypics/trollface.png" alt="Troll Face" class="hero-img about-hero">
 
 </div>
