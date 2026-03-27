@@ -27,7 +27,13 @@ main, body > article, body > section, body > div {
 }
 
 .home-content h1 {
-  margin-bottom: 0.3em;
+  margin-top: 0.5em;    /* reduced top margin */
+  margin-bottom: 0.2em; /* reduced bottom margin */
+}
+
+.home-content p {
+  margin-top: 0.2em;    /* paragraph closer to header */
+  margin-bottom: 1em;   /* breathing after paragraph */
 }
 
 /* ========================
@@ -120,7 +126,7 @@ img {
   border-radius: 12px;
 }
 
-/* Hero Image (homepage circle) */
+/* Homepage hero image */
 .hero-img {
   width: 220px;
   height: 220px;
@@ -135,6 +141,17 @@ img {
 
 .hero-img:hover {
   transform: scale(1.05);
+}
+
+/* About page hero image - similar style */
+.about-hero {
+  width: 180px;         
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;    
+  border: 3px solid #38bdf8;
+  display: block;
+  margin: 1.5em auto;
 }
 
 /* ========================
@@ -226,7 +243,7 @@ a:hover {
 }
 
 /* ========================
-   13. Responsive
+   13. Responsive tweaks
 ======================== */
 @media screen and (max-width: 768px) {
   main, body > article, body > section, body > div {
@@ -256,15 +273,5 @@ a:hover {
   h2 { font-size: 1.3em; }
   h3 { font-size: 1.1em; }
   p, li { font-size: 0.95em; }
-}
-
-/* About page hero image - similar to homepage hero */
-.about-hero {
-  width: 180px;          /* slightly smaller than homepage */
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;    /* circular border */
-  border: 3px solid #38bdf8;
-  display: block;
-  margin: 1.5em auto;    /* center */
+  img { max-width: 100%; }
 }
