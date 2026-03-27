@@ -2,6 +2,7 @@
 title: "Contact"
 draft: false
 ---
+
 Have a question or just want to say hi? Use the form below:
 
 <div class="form-container">
